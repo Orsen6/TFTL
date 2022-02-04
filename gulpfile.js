@@ -5,7 +5,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync').create();
 
-
 function browsersync(){
   browserSync.init({
     server: {

@@ -1,0 +1,27 @@
+@font-face{
+    font-family: Grtsk-Bold;
+    font-weight: 700;
+    font-style: normal;
+    src: local('Grtsk-Bold'),
+        url('../fonts/GrtskGiga-Bold.woff');
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Grtsk-Semibold;
+    font-weight: 600;
+    font-style: normal;
+    src: local('Grtsk-Semibold'),
+        url('../fonts/GrtskGiga-Semibold.woff');
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Grtsk-Medium;
+    font-weight: 500;
+    font-style: normal;
+    src: local('Grtsk-Medium'),
+        url('../fonts/GrtskGiga-Medium.woff');
+    font-display: swap;
+}
+
