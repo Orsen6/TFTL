@@ -1,0 +1,158 @@
+@media (max-width: 1024px) {
+    .container {
+        padding: 0;
+    }
+    .wrap{
+        height: 768px;
+    }
+    
+    .main{
+        &_inner{
+            padding-top: 250px;
+        }
+        &_inner-title{
+            font-size: 58px;
+        }
+        &_inner-link{
+            font-size: 14px;
+            padding-right: 12px;
+            display: inline;
+            &.footer_inner-link{
+                padding-right: 0;
+            }
+        }
+        &_inner-box{
+            &::after{
+                left: 175px;
+                top: -170px;
+                width: 482px;
+                height: 482px;
+            }
+        }
+        &_racetrack{
+            top: -200px;
+            transform: rotate(3.8deg);
+        }
+        &_racetrack-text{
+            transform: rotate(138.8deg);
+            top: -120px;
+            &:nth-child(2){
+                
+                transform: rotate(-41.2deg);
+            }
+            @keyframes step {
+                0% {
+                    left: -450px; 
+                    bottom: -350px;
+                }
+                50% { 
+                    left: 0px;
+                    bottom: 0px;
+                }
+                100% {
+                    left: -450px; 
+                    bottom: -350px;
+                }
+            };
+            @keyframes move {
+                0% {
+                    left: 0px;
+                    bottom: 0px;
+                }
+                50% { 
+                    left: 350px; 
+                    bottom: -2000px;
+                }
+                100% {
+                    left: 0px;
+                    bottom: 0px;
+                }
+            };
+        }
+        &_dot p {
+            font-size: 12px;
+        }
+    }
+    .footer{
+        padding-bottom: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap{
+        height: 1024px;
+    }
+    .main{
+        &_inner{
+            padding-top: 330px;
+        }
+        &_inner-link{
+            padding-right: 35px;
+        }
+        &_inner-box{
+            &::after{
+                left: 72px;
+                top: -95px;
+            }
+        }
+        &_dot{
+            top: 84px;
+            left: 160px;
+        }
+        &_racetrack{
+            top: 400px;
+            left: -593px;
+            transform: rotate(-14.2deg);
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .wrap{
+        height: 553px;
+        padding: 0 10px;
+    }
+    .header{
+        &_menu{
+            display: block;
+            position: absolute;
+            top: 27px;
+            right: 10px;
+        }
+    }
+    .main{
+        &_inner{
+            padding-top: 150px;
+        }
+        &_inner-title{
+            font-size: 33px;
+            line-height: 37px;
+        }
+        &_inner-link{
+            display: none;
+        }
+        &_inner-box{
+            &::after{
+                width: 294px;
+                height: 294px;
+                left: 27px;
+                top: -84px;
+            }
+        }
+        &_dot{
+            left: 76px;
+        }
+        &_racetrack{
+            top: 125px;
+            left: -725px;
+            transform: rotate(-18.2deg);
+        }
+        &_racetrack-text{
+            font-size: 28px;
+            top: -77px;
+        }
+        &_dot p:nth-of-type(-n+24) {
+            padding-bottom: 40px;
+        }
+    }
+}

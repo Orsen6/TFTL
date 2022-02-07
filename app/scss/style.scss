@@ -39,6 +39,9 @@
     &-wrapper{
         margin: 0 auto;
     }
+    &_menu{
+        display: none;
+    }
     &_link-logo{
         position: relative;
         z-index: 5;
@@ -70,7 +73,7 @@
     }
     &_inner{
         display: block;
-        position: relative;
+        position: absolute;
     }
     &_inner-list{
         display: flex;
@@ -131,7 +134,7 @@
         transform: rotate(-90deg);
         font-size: 16px;
         display: inline-block;
-        padding-bottom: 5px;
+        padding-bottom: 40px;
         overflow: hidden;
         position: relative;
         &::before{
@@ -152,7 +155,7 @@
             transform: translate3d(-100%, 0, 0);
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: 38px;
             left: 0;
             width: 100%;
             height: 0.1em;
@@ -183,7 +186,8 @@
             background-repeat: no-repeat;
             z-index: 5;
             background: #FFCB46;
-            filter: blur(76px);
+            
+            filter: blur(40px);
             border-radius: 50%
         }
     }
@@ -221,6 +225,7 @@
         position: absolute;
         animation-timing-function: linear; 
         width: 2500px;
+        transform: rotate(150deg);
         animation: step 10s infinite;
         @keyframes step {
             0% {
@@ -237,6 +242,7 @@
             }
         };
         &:nth-child(2) {
+            transform: rotate(-30deg);
             animation: move 10s infinite;
             @keyframes move {
                 0% {
@@ -290,34 +296,43 @@
         & p:nth-of-type(4) {transform: rotate(346deg);}
         & p:nth-of-type(5) {
             transform: rotate(362deg);
+            padding-bottom: 61px;
         }
         & p:nth-of-type(6) {
-            transform: rotate(371deg);
+            transform: rotate(370deg);
+            padding-bottom: 61px;
         }
         & p:nth-of-type(7) {
-            transform: rotate(383deg);
+            transform: rotate(382deg);
+            padding-bottom: 61px;
         }
         & p:nth-of-type(8) {
-            transform: rotate(396deg);
+            transform: rotate(394deg);
         }
         // 1-st
-        & p:nth-of-type(9) {transform: rotate(426deg);}
-        & p:nth-of-type(10) {transform: rotate(441deg);}
-        & p:nth-of-type(11) {transform: rotate(456deg);}
-        & p:nth-of-type(12) {transform: rotate(471deg);}
-        & p:nth-of-type(13) {transform: rotate(488deg);}
-        & p:nth-of-type(14) {transform: rotate(497deg);}
-        & p:nth-of-type(15) {transform: rotate(509deg);}
-        & p:nth-of-type(16) {transform: rotate(522deg);}
+        & p:nth-of-type(9) {transform: rotate(410deg);}
+        & p:nth-of-type(10) {transform: rotate(421deg);}
+        & p:nth-of-type(11) {transform: rotate(435deg);}
+        & p:nth-of-type(12) {transform: rotate(448deg);}
+        & p:nth-of-type(13) {transform: rotate(464deg);
+        padding-bottom: 61px;}
+        & p:nth-of-type(14) {transform: rotate(473deg);
+        padding-bottom: 61px;}
+        & p:nth-of-type(15) {transform: rotate(486deg);
+        padding-bottom: 61px;}
+        & p:nth-of-type(16) {transform: rotate(499deg);}
         // 2-nd
-        & p:nth-of-type(17) {transform: rotate(540deg);}
-        & p:nth-of-type(18) {transform: rotate(550deg);}
-        & p:nth-of-type(19) {transform: rotate(562deg);}
-        & p:nth-of-type(20) {transform: rotate(595deg);}
-        & p:nth-of-type(21) {transform: rotate(613deg);}
-        & p:nth-of-type(22) {transform: rotate(623deg);}
-        & p:nth-of-type(23) {transform: rotate(640deg);}
-        & p:nth-of-type(24) {transform: rotate(655deg);}
+        & p:nth-of-type(17) {transform: rotate(515deg);}
+        & p:nth-of-type(18) {transform: rotate(526deg);}
+        & p:nth-of-type(19) {transform: rotate(540deg);}
+        & p:nth-of-type(20) {transform: rotate(553deg);}
+        & p:nth-of-type(21) {transform: rotate(569deg);
+        padding-bottom: 61px;}
+        & p:nth-of-type(22) {transform: rotate(578deg);
+        padding-bottom: 61px;}
+        & p:nth-of-type(23) {transform: rotate(590deg);
+        padding-bottom: 61px;}
+        & p:nth-of-type(24) {transform: rotate(603deg);}
         // 3-rd
     }
     @keyframes spin {
@@ -338,3 +353,5 @@
         @extend %Grtsk-600;
     }
 }
+
+@import 'media';
